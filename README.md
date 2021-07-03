@@ -3,7 +3,7 @@
 ## Install
 
 ```shell
-pip install copernicus
+pip install git+https://github.com/MaritimeAI/copernicus
 ```
 
 ## Examples
