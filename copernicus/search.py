@@ -13,10 +13,10 @@ from .model import Snapshot
 
 
 class DataHub:
-    def __init__(self, config: Config, limit: int = None,
+    def __init__(self, config: Config, limit: int = 1000,
             chunk_size: int = 45, url: str = None) -> List[Dict]:
-        self.max_iterations = limit # 1000
-        self.max_downloaded = limit
+        self.max_iterations = limit  # FIXME: any sensible retry count
+        self.max_downloaded = limit  # FIXME: any sensible file number
         self.snapshots: List[Snapshot] = None
         self.chunk_size = chunk_size
         self.config = config
