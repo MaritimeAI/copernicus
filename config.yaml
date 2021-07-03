@@ -1,0 +1,14 @@
+credentials:
+    username: ""
+    password: ""
+accounts:
+    - username: "password"
+search:
+    start: 0
+    platformName: "Sentinel-1"
+    productType: "GRD"
+    beginPosition: "[NOW-1DAYS TO NOW]"
+download:
+    enable: False
+    path: "snapshots"
+verbose: True
